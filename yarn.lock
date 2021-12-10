@@ -7419,7 +7419,7 @@ react-native-responsive-screen@^1.4.2:
 
 react-native-restart@^0.0.22:
   version "0.0.22"
-  resolved "https://registry.npmjs.org/react-native-restart/-/react-native-restart-0.0.22.tgz"
+  resolved "https://registry.yarnpkg.com/react-native-restart/-/react-native-restart-0.0.22.tgz#81fcb7f31e35951d85410c68b9556acf3ab88705"
   integrity sha512-XwCqAMAKsO8yCM3xACPFKvkDQZe41lcavOuO0gUEu803IuTLtciualCq/qs83ryRDCDh1jkXYRqFjsGjLMCN3Q==
 
 react-native-safe-area-context@^3.3.2:

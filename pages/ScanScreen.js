@@ -67,18 +67,21 @@ const ScanScreen = ({ navigation, route }) => {
         console.log('response.error');
       } else {
         let path = null;
-        if (Platform.OS == 'android') {
-          path = response.assets[0].path;
-          if (!path) {
-            path = response.assets[0].uri;
-          }
-        } else {
-          path = response.path;
-          if (!path) {
-            path = response.uri;
-          }
+        // if (Platform.OS == 'android') {
+        //   path = response.assets[0].path;
+        //   if (!path) {
+        //     path = response.assets[0].uri;
+        //   }
+        // } else {
+        //   path = response.path;
+        //   if (!path) {
+        //     path = response.uri;
+        //   }
+        // }
+        path = response.assets[0].path;
+        if (!path) {
+          path = response.assets[0].uri;
         }
-
         // if(Platform.OS === 'android' && path.startsWith('file://')){
         //   //แทนที่ (หา,ที่แทนลงไป)
         //   path = path.replace(/file:\/\//, ''  )
@@ -103,6 +106,8 @@ const ScanScreen = ({ navigation, route }) => {
             }
           })
           .catch((error) => {
+            Alert.alert(Language.t('alert.errorTitle'), error, [{ text: Language.t('alert.ok'), onPress: () => console.log('OK Pressed') }]);
+
             console.log(error);
           });
 

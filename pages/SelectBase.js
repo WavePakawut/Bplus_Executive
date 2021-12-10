@@ -170,9 +170,7 @@ const SelectBase = ({ route }) => {
               'BPAPUS-LOGIN-GUID': '',
               'BPAPUS-FUNCTION': 'Login',
               'BPAPUS-PARAM':
-                '{"BPAPUS-MACHINE": "' +
-                registerReducer.machineNum +
-                '","BPAPUS-USERID": "' +
+                '{"BPAPUS-MACHINE": "11111122","BPAPUS-USERID": "' +
                 username +
                 '","BPAPUS-PASSWORD": "' +
                 password +
